@@ -1,3 +1,5 @@
+import math
+
 talents = input("please enter the amount of talents: ");
 pounds = input("please enter the amount of pounds: ");
 lots = input("please enter the amount of lots: ");
@@ -13,7 +15,7 @@ try:
         summ = (int(talents)*kgtal) + (int(pounds)*kgpound) + (int(lots)*kglot)
         sumstr = str(summ)
         dot = sumstr.find(".")
-        print("In modern units " + str(summ)[:dot] + " Kilograms" + " and " +  str((summ - int(summ)) * 1000) + " grams")
+        print("In modern units " + str(summ)[:dot] + " Kilograms" + " and " +  str(math.floor(((summ - int(summ)) * 1000))) + " grams")
    
 except ValueError:
     print("please enter numbers");
