@@ -7,6 +7,6 @@ try:
     area = int(a)*int(b)
     print("perimeter is: " +  str(perm))
     print("area is: " +  str(area))
-except:
+except ValueError:
     print("a and b should be numbers")
     quit()
