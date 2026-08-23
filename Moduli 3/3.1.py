@@ -1,10 +1,8 @@
 from random import randrange
-import win32api
 from threading import Timer
 
 size = input("Please insert the lenght of your Zander: ")
-def curse():
-    win32api.InitiateSystemShutdown
+
 
 try:
     if int(size) <= 42:
@@ -16,10 +14,7 @@ try:
             if conseq % 2 == 0:
                 print("Alright keep it this time, BUT never comeback!")
             else:
-                print("You are done, the CURSE OF PC SHUTDOWN!")
-            
-                t = Timer(3.0, curse)
-                t.start()
+                print("Busted!")
                 
     else:
         print("Nice Catch!")
