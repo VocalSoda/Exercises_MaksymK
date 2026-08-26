@@ -8,8 +8,8 @@ while True:
             print("too low!")
         elif draw < usr:
             print("too high!")
-        
         else:
             print("CORRECT")
+            break
     except ValueError:
         print("Number please!")
