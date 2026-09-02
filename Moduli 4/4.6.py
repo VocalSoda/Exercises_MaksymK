@@ -2,10 +2,6 @@ import math
 import random
 pointamount = 0
 maxpointamount = int(input("What is point amount?: "))
-cornerA = [-1, 1]
-cornerB = [1, -1]
-cornerC = [1, 1]
-cornerD = [-1, -1]
 npoint = 0
 while pointamount < maxpointamount:
     pointamount = pointamount +1
