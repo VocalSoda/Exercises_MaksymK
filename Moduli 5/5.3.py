@@ -5,22 +5,17 @@ except ValueError:
     
     print("insert a Number!")
 
-while True:
 
-    check_int = None
-    
-    for x in range(1, number-1):
-        
+for x in range(2, number):
+        print(x)
         if number % x == 0:
+          print(f"number {number} is NOT prime number")
+          break        
             
-            check_int = 1
-        
-    if check_int == 1:
-        print(f"number {number} is a prime number")
-        
-        break
-    else:
-        print(f"number {number} is NOT prime number")
-        
-        break
+         
+else:  
+    print(f"number {number} is prime number")
+    
+
+            
             
