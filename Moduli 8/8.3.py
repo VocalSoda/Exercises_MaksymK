@@ -1,7 +1,6 @@
 import os
-from dotenv import load_dotenv, dotenv_values
+from dotenv import load_dotenv
 import mysql.connector
-import geopy
 from geopy.distance import geodesic
 load_dotenv()
 
