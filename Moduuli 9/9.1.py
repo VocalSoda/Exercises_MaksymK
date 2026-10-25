@@ -24,9 +24,6 @@ car_list = []
 for i in range(0, 10):
  car_list.append(Car(f"ABC-{i}", f"{random.randint(100, 200)}"))
 
-for item in car_list:
-    print(item.registration, item.max_speed)
-    
 while all(item.distance <= 10000 for item in car_list):
     for item in car_list: 
         item.accelerate(random.randint(-10, 15)) 
@@ -36,9 +33,9 @@ while all(item.distance <= 10000 for item in car_list):
 winners_list = []
 
 for item in car_list:
-    append_item = [item.registration, item.distance]   
+    append_item = (item.registration, item.distance, item.max_speed)   
     winners_list.append(append_item)  
   
 winners_list.sort(key=lambda item: item[1], reverse=True)        
 for item in winners_list:
-    print(item)
+    print(f"{item[0]}  {item[1]} {item[2]} { "WINNER" if item[1] >= 10000 else " " }")
